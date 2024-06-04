@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ss.css">
+</head>
+
+<body>   
+    <div class="container" style="text-align: center;">
+        <div class="sec">
+            <h5 style="text-align: center; font-size: 30px;">Click on the password to copy it!</h5>
+            <h1 style="text-align: center; font-size: 50px;">PA$$WORD:</h1>
+            <button id="loadKeyWord">Key Word</button>
+            <button id="loadRandom">Random</button>
+            <div id="keywordPass" class="hidden">
+                <form id="formKey">
+                    <label for="keyword" style="font-size: 20px;">Key Word:</label>
+                    <br>
+                    <input type="text" name="keyword" class="keyword">
+                    <br>
+                    <button type="submit">Generate</button>
+                </form>
+                <label for="pass" style="font-size: 20px;">Key Word Password:</label>
+                <div id="showKeyPass"></div>
+            </div>
+            <div id="randomPass" class="hidden">
+                <label for="pass" style="font-size: 20px;">Random Password:</label>
+                <div id="showRandomPass" ></div>
+            </div>
+        </div>
+        <div id="copyMessage" >Password Copied!</div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
